@@ -1,23 +1,35 @@
-# 🚀 Durgesh Gurjar – Portfolio
+# Durgesh Gurjar - Portfolio
 
-This is my personal portfolio website built using **React**, **Tailwind CSS**, and **Vite**.  
-It showcases my projects, skills, contact info, and theme toggle with smooth animations.
+My personal portfolio website built using React, Vite, and Tailwind CSS.
 
-### 🔗 Live Demo
+It showcases my projects, skills, and the technologies I am learning while working on web development.
 
-🌐🚀 Live Demo: [https://iamdurgesh.vercel.app](https://iamdurgesh.vercel.app)
+## 🌐 Live Demo
 
-### 🧰 Tech Stack
+https://iamdurgesh.vercel.app
 
-- React + Vite
+## 🛠️ Tech Stack
+
+- React
+- Vite
 - Tailwind CSS
-- EmailJS (for contact form)
-- FontAwesome
-- Intersection Observer
-- Mobile + dark/light mode support
+- JavaScript
+- EmailJS
+- Font Awesome
 
-### 📁 Project Structure
+## ✨ Features
 
+- Responsive design
+- Dark and light mode
+- Project showcase
+- Contact form
+- Mobile-friendly layout
+- Smooth UI interactions
+- Intersection Observer based animations
+
+## 📁 Project Structure
+
+```text
 src/
 ├── components/
 ├── hooks/
@@ -25,17 +37,43 @@ src/
 ├── styles/
 ├── App.jsx
 └── main.jsx
+```
 
-### 📬 Contact Me
+## 🚀 Getting Started
 
-You can reach me at:
+Clone the repository:
 
-- 📧 **Email**: [pateldurgesh9399@gmail.com](mailto:pateldurgesh9399@gmail.com)
-- 📱 **Phone**: [+91 8839935490](tel:+918839935490)
-- 📸 **Instagram**: [@gurjar_durgesh_88](https://instagram.com/gurjar_durgesh_88)
-- 💻 **GitHub**: [@gurjardurgesh88](https://github.com/gurjardurgesh88)
-- 💼 **LinkedIn**: [linkedin.com/in/durgesh-gurjar-195533369](https://linkedin.com/in/durgesh-gurjar-195533369)
+```bash
+git clone https://github.com/gurjardurgesh88/Durgesh_Gurjar_Portfolio.git
+```
 
-### 📝 License
+Install the dependencies:
 
-This project is licensed under the **MIT License**. See the [`LICENSE`](./LICENSE) file for mor
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will run locally at:
+
+```text
+http://localhost:5173
+```
+
+## 📌 Project
+
+This portfolio is a work in progress. I will continue updating it as I build new projects and learn new technologies.
+
+## 🔗 Links
+
+- GitHub: https://github.com/gurjardurgesh88
+- LinkedIn: https://www.linkedin.com/in/durgesh-gurjar-195533691/
+
+## 📄 License
+
+This project is open-source.
