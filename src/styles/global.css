@@ -1,8 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -13,8 +10,9 @@ html::-webkit-scrollbar {
 }
 
 body {
-  @apply bg-black text-white transition-colors duration-500;
-
+  background-color: #000;
+  color: #fff;
+  transition: background-color 500ms, color 500ms;
   -ms-overflow-style: none;
 }
 
@@ -22,12 +20,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Light Theme
-   In this project .dark class represents light mode */
 html.dark body {
-  @apply bg-white text-black;
+  background-color: #fff;
+  color: #000;
 }
-
 
 .glass-effect {
   background: rgba(0, 0, 0, 0.03);
@@ -35,44 +31,55 @@ html.dark body {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-
 html.dark .glass-effect {
   background: rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-@layer components {
-  .neon-border {
-    @apply border border-cyan-400 shadow-md hover:shadow-cyan-400/40;
-  }
-
-  .neon-border-purple {
-    @apply border border-purple-500 shadow-md hover:shadow-purple-500/40;
-  }
-
-  .neon-border-pink {
-    @apply border border-pink-400 shadow-md hover:shadow-pink-400/40;
-  }
-
-  .neon-glow {
-    text-shadow:
-      0 0 8px #00ffff,
-      0 0 12px #00ffff;
-  }
-
-  .neon-glow-purple {
-    text-shadow:
-      0 0 8px #9d4edd,
-      0 0 12px #9d4edd;
-  }
-
-  .neon-glow-pink {
-    text-shadow:
-      0 0 8px #ff00ff,
-      0 0 12px #ff00ff;
-  }
+.neon-border {
+  border: 1px solid #22d3ee;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+.neon-border:hover {
+  box-shadow: 0 4px 6px -1px rgba(34, 211, 238, 0.4);
+}
+
+.neon-border-purple {
+  border: 1px solid #a855f7;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.neon-border-purple:hover {
+  box-shadow: 0 4px 6px -1px rgba(168, 85, 247, 0.4);
+}
+
+.neon-border-pink {
+  border: 1px solid #f472b6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.neon-border-pink:hover {
+  box-shadow: 0 4px 6px -1px rgba(244, 114, 182, 0.4);
+}
+
+.neon-glow {
+  text-shadow:
+    0 0 8px #00ffff,
+    0 0 12px #00ffff;
+}
+
+.neon-glow-purple {
+  text-shadow:
+    0 0 8px #9d4edd,
+    0 0 12px #9d4edd;
+}
+
+.neon-glow-pink {
+  text-shadow:
+    0 0 8px #ff00ff,
+    0 0 12px #ff00ff;
+}
 
 html.dark .neon-glow,
 html.dark .neon-glow-purple,
@@ -80,69 +87,84 @@ html.dark .neon-glow-pink {
   text-shadow: none;
 }
 
-
-@layer utilities {
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
   }
 
-  .animate-fade-in {
-    animation: fade-in 0.3s ease-out forwards;
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
 
-  @keyframes slide-up {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
   }
 
-  .animate-slide-up {
-    animation: slide-up 0.6s ease-out forwards;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 0.6s ease-out forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
   }
 
-  @keyframes slide-left {
-    0% {
-      opacity: 0;
-      transform: translateX(-40px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+.animate-slide-right {
+  animation: slide-right 0.6s ease-out forwards;
+}
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+}
+@keyframes reverse-spin {
+  from {
+    transform: rotate(360deg);
   }
 
-  .animate-slide-left {
-    animation: slide-left 0.6s ease-out forwards;
+  to {
+    transform: rotate(0deg);
   }
+}
 
-  @keyframes slide-right {
-    0% {
-      opacity: 0;
-      transform: translateX(40px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  .animate-slide-right {
-    animation: slide-right 0.6s ease-out forwards;
-  }
+.reverse-spin {
+  animation: reverse-spin 1s linear infinite;
 }

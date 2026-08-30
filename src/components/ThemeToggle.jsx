@@ -26,7 +26,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="text-xl relative group transition-transform duration-300 hover:rotate-180"
+      className="text-xl cursor-pointer relative group transition-transform duration-300 hover:rotate-180"
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
       title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
