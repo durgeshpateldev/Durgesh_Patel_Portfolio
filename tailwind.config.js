@@ -8,7 +8,7 @@ export default {
         orbitron: ["Orbitron", "sans-serif"],
       },
       animation: {
-        "reverse-spin": "spin 1s linear infinite reverse", // ✅ Add this
+        "reverse-spin": "spin 1s linear infinite reverse",
       },
     },
   },

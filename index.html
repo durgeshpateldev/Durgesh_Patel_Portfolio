@@ -2,67 +2,54 @@
 <html lang="en">
 
 <head>
+
+  <meta charset="UTF-8" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <script>
     (function () {
-      const theme = localStorage.getItem('theme');
-      if (theme === 'light') {
-        document.documentElement.classList.remove('dark');
-      } else {
-        document.documentElement.classList.add('dark');
+      const theme = localStorage.getItem("theme") || "dark";
+      const root = document.documentElement;
+
+      root.classList.remove("light", "dark");
+
+      if (theme === "light") {
+        root.classList.add("dark");
       }
     })();
   </script>
-    
+
+
   <meta name="google-site-verification" content="edXGNME0Ye5DefT1BIZNIT_ODyKD2hhp7YiBA_utP0U" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="msapplication-TileColor" content="#000000" />
-  <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="application-name" content="Durgesh Gurjar Portfolio" />
-  <meta name="apple-mobile-web-app-title" content="Durgesh Gurjar Portfolio" />
-  <meta name="msapplication-tooltip" content="Durgesh Gurjar Portfolio" />  
-  <!-- ✅ Basic Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✅ Title -->
-  <title>Durgesh Gurjar | Portfolio</title>
 
-  <!-- ✅ SEO Meta -->
+  <title>Durgesh Patel | MERN Stack Developer</title>
+
   <meta name="description"
-    content="I'm Durgesh Gurjar, a BCA 2nd year student and aspiring frontend developer. Explore my portfolio featuring responsive React projects, interactive UIs, and modern web design using Tailwind CSS, JavaScript, and more.">
-  <meta name="keywords"
-    content="Durgesh Gurjar,durgesh patel bhanpur,Durgesh Patel Sohagpur, durgesh patel sohagpur,Durgesh_patel_sohagpur,Durgesh patel pipariya, frontend developer,web developer bhanpur, pg collage pipariya React developer, JavaScript, portfolio, web development, pipariya, BCA,pipariya web developer, durgesh gurjar bhanpur,durgesh gurjar pipariya developer India,durgesh patel bca,durgesh patel dca,durgesh patel frontend developer,durgesh patel portfolio,Durgesh Gurjar Portfolio,Durgesh Patel Shobhapur">
-  <meta name="author" content="Durgesh Gurjar" />
+    content="Durgesh Patel is a MERN Stack Developer focused on building modern, responsive web applications with React.js, Node.js, Express.js, MongoDB and Tailwind CSS." />
+    
+  <meta name="author" content="Durgesh Patel" />
   <meta name="robots" content="index, follow" />
-
-  <!-- ✅ Open Graph Tags (for LinkedIn, Facebook etc) -->
-  <meta property="og:title" content="Durgesh Gurjar | Frontend Developer Portfolio" />
+  <meta property="og:title" content="Durgesh Patel | MERN Stack Developer" />
   <meta property="og:description"
-    content="Durgesh is a passionate frontend developer with projects in React, JavaScript, TailwindCSS, and more." />
+    content="Explore Durgesh Patel's portfolio featuring React.js, MERN Stack projects, responsive web applications and modern web development." />
   <meta property="og:image" content="https://iamdurgesh.vercel.app/preview.png" />
   <meta property="og:url" content="https://iamdurgesh.vercel.app/" />
   <meta property="og:type" content="website" />
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
-  <link rel="apple-touch-icon" href="public/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" />
-
-  <!-- ✅ Google Fonts -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Durgesh | Portfolio" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-
-  <!-- ✅ FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 

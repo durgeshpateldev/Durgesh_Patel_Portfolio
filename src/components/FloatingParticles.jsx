@@ -7,7 +7,7 @@ const FloatingParticles = () => {
     const colors = ["#00ffff", "#9d4edd", "#ff00ff"];
     const newParticles = [];
 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 30; i++) {
       newParticles.push({
         id: i,
         x: Math.random() * window.innerWidth,
@@ -22,7 +22,7 @@ const FloatingParticles = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-[-10]">
+    <div className="fixed inset-0 pointer-events-none z-0">
       {particles.map((particle) => (
         <div
           key={particle.id}

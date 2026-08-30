@@ -35,7 +35,7 @@ const Navigation = () => {
           Durgesh | Portfolio
         </h1>
 
-        {/* Mobile view: Theme toggle + burger */}
+        
         <div className="flex items-center gap-4 md:hidden">
           <ThemeToggle />
           <button

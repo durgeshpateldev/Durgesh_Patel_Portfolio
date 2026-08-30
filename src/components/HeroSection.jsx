@@ -1,68 +1,81 @@
-import React, { useEffect, useRef, useState } from "react";
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import React, { useEffect, useState } from "react";
 
 const HeroSection = () => {
-  const heroRef = useRef();
-  const isVisible = useIntersectionObserver(heroRef, { threshold: 0.3 });
+  const [currentText, setCurrentText] = useState(0);
 
-  const titles = ["Frontend Developer", "Web Developer"];
-  const [text, setText] = useState("");
-  const [textIndex, setTextIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
+  const roles = [
+    "MERN Stack Developer",
+    "React.js Developer",
+    "Full Stack Developer",
+  ];
 
   useEffect(() => {
-    const current = titles[textIndex];
-    if (charIndex <= current.length) {
-      const timeout = setTimeout(() => {
-        setText(current.slice(0, charIndex));
-        setCharIndex((prev) => prev + 1);
-      }, 100);
-      return () => clearTimeout(timeout);
-    } else {
-      const delay = setTimeout(() => {
-        setCharIndex(0);
-        setTextIndex((prev) => (prev + 1) % titles.length);
-      }, 2000);
-      return () => clearTimeout(delay);
-    }
-  }, [charIndex, textIndex]);
+    const interval = setInterval(() => {
+      setCurrentText((prev) => (prev + 1) % roles.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
       id="home"
-      ref={heroRef}
-      className="min-h-screen flex items-center justify-center relative px-4 sm:px-8 dark:bg-white dark:text-black bg-black text-white"
+      className="min-h-[calc(100svh-4rem)] sm:min-h-screen flex items-center justify-center px-4 sm:px-8 bg-black text-white dark:bg-white dark:text-black transition-colors duration-500"
     >
-      <div
-        className={`max-w-4xl mx-auto text-center transition-opacity duration-1000 ${
-          isVisible ? "animate-fade-in" : "opacity-0"
-        }`}
-      >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold orbitron text-white dark:text-black neon-glow dark:neon-glow">
-          Hey, I'm Durgesh
+      <div className="max-w-6xl w-full mx-auto text-center">
+        
+        <p className="text-cyan-400 dark:text-cyan-600 text-base sm:text-lg mb-3">
+          Hi, I'm
+        </p>
+
+       
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold orbitron neon-glow-purple dark:neon-glow-none">
+          Durgesh Patel
         </h1>
 
-        <h2 className="text-xl sm:text-2xl md:text-3xl text-purple-400 dark:text-purple-700 mt-6 mb-6 min-h-[2.5rem]">
-          {text}
-        </h2>
+        
+        <div className="h-10 sm:h-12 mt-5 overflow-hidden">
+          <h2
+            key={currentText}
+            className="text-xl sm:text-2xl md:text-3xl font-semibold text-pink-400 dark:text-pink-500 animate-fade-in"
+          >
+            {roles[currentText]}
+          </h2>
+        </div>
 
-        <div
-          className={`flex flex-col sm:flex-row gap-4 justify-center ${
-            isVisible ? "animate-slide-up" : "opacity-0"
-          }`}
-        >
+        
+        <p className="max-w-2xl mx-auto mt-5 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300 dark:text-gray-700">
+          I build modern, responsive web applications with React and the MERN
+          stack.
+        </p>
+
+       
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
           <a
-            href="/Durgesh_resume.pdf"
+            href="/Durgesh_Patel_Resume.pdf"
             download
-            className="px-8 py-3 rounded-full border border-cyan-400 text-white dark:text-black hover:scale-105 hover:shadow-cyan-400/50 transition-all"
+            className="w-full sm:w-auto px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(139,92,246,0.25)]"
           >
             Download CV
           </a>
+
           <a
             href="#contact"
-            className="px-8 py-3 rounded-full border border-pink-400 text-white dark:text-black hover:scale-105 hover:shadow-pink-400/50 transition-all"
+            className="w-full sm:w-auto px-6 py-3 rounded-lg font-semibold border border-cyan-400/50 text-cyan-400 dark:text-cyan-600 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-400/10 hover:border-cyan-400"
           >
             Contact Me
+          </a>
+        </div>
+
+        
+        <div className="mt-10 sm:mt-14 animate-bounce">
+          <a
+            href="#about"
+            aria-label="Scroll to About section"
+            className="inline-flex flex-col items-center text-gray-400 dark:text-gray-600 hover:text-cyan-400 transition-colors duration-300"
+          >
+            <span className="text-xs mb-2">Scroll Down</span>
+            <i className="fas fa-chevron-down text-sm"></i>
           </a>
         </div>
       </div>

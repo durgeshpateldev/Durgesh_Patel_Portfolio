@@ -1,4 +1,3 @@
-import React from "react";
 import FloatingParticles from "./components/FloatingParticles";
 import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";

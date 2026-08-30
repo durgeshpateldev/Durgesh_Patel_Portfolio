@@ -5,7 +5,7 @@ const ProfileImage = () => {
 
   return (
     <>
-      {/* Thumbnail with hover zoom */}
+    
       <div
         onClick={() => setIsOpen(true)}
         className="group w-64 h-64 mx-auto cursor-pointer neon-border-pink dark:border-gray-300 rounded-full overflow-hidden shadow-lg relative z-10"
@@ -18,7 +18,7 @@ const ProfileImage = () => {
         />
       </div>
 
-      {/* Modal */}
+   
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999] animate-fade-in"
@@ -26,7 +26,7 @@ const ProfileImage = () => {
         >
           <div
             className="relative max-w-full max-h-full p-4"
-            onClick={(e) => e.stopPropagation()} // prevent modal from closing if img clicked
+            onClick={(e) => e.stopPropagation()}
           >
             <img
               src="/profile.jpg"
