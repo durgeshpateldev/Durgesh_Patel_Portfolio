@@ -54,7 +54,7 @@ const HeroSection = () => {
           <a
             href="/Durgesh_Patel_Resume.pdf"
             download
-            className="w-full sm:w-auto px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(139,92,246,0.25)]"
+            className="w-full sm:w-auto px-6 py-3 rounded-lg font-semibold text-black bg-linear-to-r from-cyan-400 via-purple-500 to-pink-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(139,92,246,0.25)]"
           >
             Download CV
           </a>
