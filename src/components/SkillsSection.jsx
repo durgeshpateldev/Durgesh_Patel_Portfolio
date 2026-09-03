@@ -85,7 +85,7 @@ const SkillsSection = () => {
             return (
               <div
                 key={skill.name}
-                className={`group w-full max-w-sm mx-auto min-h-[88px]
+                className={`group w-full max-w-sm mx-auto min-h-22
                   glass-effect dark:bg-gray-100 dark:text-black
                   px-5 py-4
                   rounded-xl

@@ -26,12 +26,12 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black dark:bg-white bg-opacity-90 backdrop-blur-md transition-colors duration-300 shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1
+        <div
           className="text-2xl font-bold orbitron text-cyan-400 dark:text-cyan-600 cursor-pointer mr-auto"
           onClick={() => scrollToSection("Home")}
         >
           Durgesh | Portfolio
-        </h1>
+        </div>
 
         <div className="flex items-center gap-4 md:hidden">
           <ThemeToggle />

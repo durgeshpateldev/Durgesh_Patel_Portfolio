@@ -6,7 +6,7 @@ The portfolio showcases my skills, projects, experience, and journey as I learn 
 
 ## 🌐 Live Demo
 
-[Visit Portfolio](https://iamdurgesh.vercel.app/)
+[Visit Portfolio](https://iamdurgesh.me/)
 
 ## 🛠️ Tech Stack
 
@@ -127,7 +127,7 @@ I continue to improve my skills by building practical projects and experimenting
 
 ## 🔗 Connect With Me
 
-- **Portfolio:** [iamdurgesh.vercel.app](https://iamdurgesh.vercel.app/)
+- **Portfolio:** [iamdurgesh.vercel.app](https://iamdurgesh.me/)
 - **GitHub:** [github.com/gurjardurgesh88](https://github.com/gurjardurgesh88)
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/durgesh-gurjar-195533691/)
 

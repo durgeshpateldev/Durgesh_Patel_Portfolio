@@ -43,7 +43,7 @@ const ExperienceSection = () => {
         
         <div className="relative">
           
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400 via-purple-500 to-pink-500 md:-translate-x-1/2"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-cyan-400 via-purple-500 to-pink-500 md:-translate-x-1/2"></div>
 
           <div className="space-y-16">
             {experiences.map((experience, index) => (

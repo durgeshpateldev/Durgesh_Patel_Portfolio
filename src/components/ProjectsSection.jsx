@@ -71,7 +71,7 @@ const ProjectsSection = () => {
                 </h3>
 
                 
-                <p className="text-gray-300 dark:text-gray-700 leading-relaxed min-h-[120px]">
+                <p className="text-gray-300 dark:text-gray-700 leading-relaxed min-h-30">
                   {project.description}
                 </p>
 

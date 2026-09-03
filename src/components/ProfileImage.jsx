@@ -21,7 +21,7 @@ const ProfileImage = () => {
    
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999] animate-fade-in"
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-9999 animate-fade-in"
           onClick={() => setIsOpen(false)}
         >
           <div

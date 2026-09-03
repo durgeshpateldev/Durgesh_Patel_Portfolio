@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const BASE_URL = "https://iamdurgesh.vercel.app";
+const BASE_URL = "https://iamdurgesh.me";
 
 const today = new Date().toISOString().split("T")[0];
 
