@@ -86,7 +86,7 @@ const SkillsSection = () => {
               <div
                 key={skill.name}
                 className={`group w-full max-w-sm mx-auto min-h-22
-                  glass-effect dark:bg-gray-100 dark:text-black
+                  glass-effect hover:cursor-default dark:bg-gray-100 dark:text-black
                   px-5 py-4
                   rounded-xl
                   border border-cyan-400/30 sm:border-gray-800

@@ -155,7 +155,7 @@ const ContactSection = () => {
                 <i className="fab fa-github text-gray-300 text-lg"></i>
 
                 <a
-                  href="https://github.com/gurjardurgesh88"
+                  href="https://github.com/durgeshpateldev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-cyan-400 transition-colors duration-300"
@@ -168,7 +168,7 @@ const ContactSection = () => {
                 <i className="fab fa-linkedin text-blue-500 text-lg"></i>
 
                 <a
-                  href="https://linkedin.com/in/durgesh-gurjar-195533369"
+                  href="http://www.linkedin.com/in/durgesh-patel-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-cyan-400 transition-colors duration-300"

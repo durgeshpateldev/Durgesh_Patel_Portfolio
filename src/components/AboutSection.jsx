@@ -78,7 +78,7 @@ const AboutSection = () => {
               {highlights.map(([value, label], index) => (
                 <div
                   key={index}
-                  className="glass-effect dark:bg-gray-100 dark:text-black p-4 rounded-lg border border-gray-800 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.12)]"
+                  className="glass-effect hover:cursor-default dark:bg-gray-100 dark:text-black p-4 rounded-lg border border-gray-800 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.12)]"
                 >
                   <p className="font-bold text-cyan-400 dark:text-cyan-600">
                     {value}

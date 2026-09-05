@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       description:
         "A React-based text utility application for analyzing, formatting, and transforming text through a clean and simple interface.",
       technologies: ["React.js", "Bootstrap"],
-      github: "https://github.com/gurjardurgesh88/Text-editor-app",
+      github: "https://github.com/durgeshpateldev/Text-editor-app",
       live: "https://text-editor-online.vercel.app/",
     },
 
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
       description:
         "A modern social media web application inspired by X, built with React.js and Tailwind CSS with a responsive and interactive interface.",
       technologies: ["React.js", "Tailwind CSS"],
-      github: "https://github.com/gurjardurgesh88/x-social",
+      github: "https://github.com/durgeshpateldev/x-social",
       live: "https://x-social-app.vercel.app/",
     },
 
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       description:
         "A classic Snake Game built with HTML, CSS, and JavaScript featuring interactive gameplay, score tracking, and smooth controls.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
-      github: "https://github.com/gurjardurgesh88/Snakemania",
+      github: "https://github.com/durgeshpateldev/Snakemania",
       live: "https://snakemania-game.vercel.app/",
     },
   ];
